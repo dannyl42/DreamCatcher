@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">DreamCatcher</string>
+    <string name="dream_title_text">Enter a title for the dream.</string>
+    <string name="dream_title_label">TITLE</string>
+    <string name="dream_details_label">DETAILS</string>
+    <string name="dream_fulfilled_checkbox">Fulfilled</string>
+    <string name="dream_deferred_checkbox">Deferred</string>
+    <string name="dream_entries_label">ENTRIES</string>
+
+    <string name="deferred">DEFERRED</string>
+    <string name="fulfilled">FULFILLED</string>
+    <string name="details">Details</string>
+    <string name="conceived">CONCEIVED</string>
+
+
+    <string name="dream_item_date">Date</string>
+    <string name="dream_item_title">Title</string>
+    <string name="dream_entry_0_button">Button</string>
+    <string name="dream_entry_1_button">Button</string>
+    <string name="dream_entry_2_button">Button</string>
+    <string name="dream_entry_3_button">Button</string>
+    <string name="dream_entry_4_button">Button</string>
+    <string name="new_dream">New Dream</string>
+    <string name="delete_all_dreams">Delete All Dreams</string>
+    <string name="enter_reflection">Enter Reflection</string>
+
+    <string name="share_dream">Share Dream</string>
+    <string name="take_dream_photo">Take Photo</string>
+    <string name="send_report">Send dream report via</string>
+
+    <string name="dream_conceived">This dream was conceived on %s</string>
+    <string name="dream_report_subject">DreamCatcher Dream Report</string>
+    <string name="dream_reflections">Dream Reflections</string>
+    <string name="dream_reflection_1">First Reflection</string>
+    <string name="dream_reflection_2">Second Reflection</string>
+    <string name="dream_reflection_3">Third Reflection</string>
+
+    <string name="dream_fulfilled">This dream has been fulfilled.</string>
+    <string name="dream_deferred">This dream has been deferred.</string>
+    <string name="dream_photo">dream_photo</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dream_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/dream_photo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#9FA8DA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/reflection_text"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dream_title_label"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dream_photo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dream_title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/dream_title_text"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dream_photo"
+        app:layout_constraintTop_toBottomOf="@+id/reflection_text" />
+
+    <CheckBox
+        android:id="@+id/dream_fulfilled_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fulfilled"
+        app:layout_constraintStart_toStartOf="@+id/dream_title_text"
+        app:layout_constraintTop_toBottomOf="@+id/dream_title_text" />
+
+    <CheckBox
+        android:id="@+id/dream_deferred_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deferred"
+        app:layout_constraintEnd_toEndOf="@+id/dream_title_text"
+        app:layout_constraintTop_toBottomOf="@+id/dream_title_text" />
+
+    <TextView
+        android:id="@+id/dream_entries_label"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dream_entries_label"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/dream_entry_recycler_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dream_deferred_checkbox" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dream_entry_recycler_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dream_entries_label"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_reflection_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+         />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
